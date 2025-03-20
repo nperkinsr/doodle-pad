@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Doodle Pad</title>
+
+  <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel=" stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+
+  <h1>DOODLE BOARD</h1>
+  <div class="container">
+    <div class="toolbar">
+      <h3>Colours</h3>
+      <div id="colorSwatches"></div>
+
+      <h3 class="h3BrushTitle">Brush & Fill</h3>
+      <div id="brushSizes">
+        <div class="brush-option" data-size="3">
+          <div class="brush-dot small"></div>
+        </div>
+        <div class="brush-option" data-size="8">
+          <div class="brush-dot medium"></div>
+        </div>
+        <div class="brush-option" data-size="15">
+          <div class="brush-dot large"></div>
+        </div>
+        <div class="brush-option" id="fillTool">
+          <i class="bi bi-droplet-half"></i>
+        </div>
+        <div class="brush-option" id="eraser">
+          <i class="bi bi-eraser-fill"></i>
+        </div>
+      </div>
+
+      <button id="clearCanvas">Clear</button>
+    </div>
+    <canvas id="doodleCanvas" width="600" height="428"></canvas>
+  </div>
+
+
+
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
